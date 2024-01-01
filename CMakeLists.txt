@@ -4,4 +4,4 @@ project(websocat-plugin)
 find_library(cryptopp NAMES cryptopp)
 
 add_library(foo SHARED foo.cpp)
-target_link_libraries(foo -static-libstdc++ libcryptopp.a)
+target_link_libraries(foo -static-libstdc++ cryptopp)
